@@ -37,7 +37,7 @@ public class Main1 {
 		int size = list.size();
 		System.out.println(size);
 		//3.add value into list
-		list.add(67);
+		list.add(67);	
 		list.add(22);
 		list.add(1);
 		list.add("hello");

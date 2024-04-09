@@ -24,12 +24,18 @@ public class Main4 {
 		
 		System.out.println(list);
 //		System.out.println(list.contains("Mike"));
+		/*
 		while(list.contains("Jack")) {
 			list.remove("Jack");
 //			System.out.println(list);
-		}
+		}*/
+		
+		
+		//keep removing until it returns false
+		//because when it returns false, that means there is no Jack anymore
+		while(list.remove("Jack")) {}
 
-//		System.out.println(list);
+		System.out.println(list);
 		
 		
 	}
