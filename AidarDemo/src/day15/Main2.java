@@ -38,6 +38,17 @@ public class Main2 {
 		//v		1
 		//
 		
+		/*
+		        Collection										Map
+		        	|											|
+		      -----------------------							HashMap
+		      |						|							TreeMap
+		      List					Set							LinkedHashMap
+		      |						|
+		      ArrayList				HashSet
+		      LinkedList			TreeSet
+		      Vector  				LinkedHashSet
+		 */
 	}
 
 }
