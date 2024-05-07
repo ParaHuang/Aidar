@@ -73,6 +73,18 @@ public class Main1 {
 			
 			System.out.println();
 		}
+		for(int i=rows ; i>=1 ; i--) {
+			//print space
+			for(int k=1 ; k<=rows-i ; k++) {
+				System.out.print(" ");
+			}
+			//print diamonds
+			for(int j=1 ; j<=i+i-1 ; j++) {
+				System.out.print("*");
+			}
+			
+			System.out.println();
+		}
 		
 		// 2.do the last one upside down
 		// 3.chess     W:white   B:black
