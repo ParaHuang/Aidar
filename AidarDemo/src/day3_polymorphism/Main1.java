@@ -21,3 +21,7 @@ public class Main1 {
         h2.sleep();
     }
 }
+
+//2 precondition of polymorphism:
+//1.reference type change
+//2.override

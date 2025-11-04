@@ -2,11 +2,11 @@ package day3_polymorphism;
 
 
 public class Club {
-    public void party(Human c){
+    public void party(Human h){
         System.out.println("\npart start");
-        c.eat();
+        h.eat();    //polymorphism.
         System.out.println("part is over,everybody go home");
-        c.sleep();
+        h.sleep();
     }
     /*
     //              format parameter
