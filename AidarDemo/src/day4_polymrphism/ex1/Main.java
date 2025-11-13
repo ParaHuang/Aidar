@@ -20,7 +20,6 @@ class YoungPeople{
     }
 }
 
-
 abstract class GameMachine{
     public abstract void playGame();
 }
