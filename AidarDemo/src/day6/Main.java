@@ -17,5 +17,7 @@ public class Main {
 
 
         System.out.println("now there are "+ Student.count+" students together");
+
+        Student.b();
     }
 }

@@ -31,4 +31,27 @@ public class Student {
                 ", teacherName='" + teacherName + '\'' +
                 '}';
     }
+
+    public void a(){//belongs to object
+
+    }
+
+    public static void b(){ //->belong to class
+//      a();    //wrong
+      c();
+
+//      id = 10;//wrong
+        count = 10;
+    }
+    public static void c(){
+
+    }
 }
+//static
+//1.use on variable
+//      a.static variable belongs to class,every object share it
+//      b.use it by ClassName.variableName
+//2.use on method:
+//      a.static method will be preloaded when you just define the class
+//      b.static method can only directly use other static method or variable
+//      c.static method belongs to class, in other place you can call it by ClassName.methodName();
