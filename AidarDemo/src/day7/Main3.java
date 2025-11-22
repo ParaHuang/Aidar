@@ -12,7 +12,7 @@ public class Main3 {
         list.add("gold");
         list.add("wood");
         list.add("water");
-        list.add("fire");
+        list.add(0,"fire");//insert
         list.add("dirt");
         list.add("fire");
         System.out.println(list);
