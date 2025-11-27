@@ -3,7 +3,7 @@ package day7;
 import java.util.ArrayList;
 import java.util.List;
 
-//Collections
+//Collection
 //     |-------List(ArrayList, LinkedList)
 //     |-------Set
 //Map
