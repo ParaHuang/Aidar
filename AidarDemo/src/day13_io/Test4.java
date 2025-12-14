@@ -11,10 +11,10 @@ public class Test4 {
         stream              input               output
         action              read                write
          */
-
+        //writing
         try {
-            OutputStream out = new FileOutputStream("/Users/parahuang/Downloads/hello.txt");
-            out.write("hello from Java".getBytes());//String->byte[]
+            OutputStream out = new FileOutputStream("/Users/parahuang/Downloads/hello.txt",true);
+            out.write("\r\n--more new content--".getBytes());//String->byte[]
             out.close();
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
