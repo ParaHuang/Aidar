@@ -40,6 +40,14 @@ public class Test5 {
         //4.if there is only 1 parameter, then you can omit ()
         MyFunctionInterface4 mfi4_1 = x-> System.out.println(x);
         mfi4_1.a(89);
+
+        //ternary operation
+        System.out.println(1<5?"hello":"hey");
+//        if(1<5){
+//            a lot of code
+//        }else{
+//            a lot of code
+//        }
     }
 }
 
