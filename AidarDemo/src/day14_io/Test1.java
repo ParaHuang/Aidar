@@ -27,6 +27,7 @@ public class Test1 {
 //            byte[] arr = new byte[10*1024*11024];
 //            in.read(arr);           //you can limit how much you read for 1 single time
 //            in.read(arr);           //next time you will read from where you stop last time
+            in.close();
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
         } catch (IOException e) {

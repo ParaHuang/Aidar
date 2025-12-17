@@ -16,7 +16,7 @@ public class Test2 {
             byte[] bs = in.readAllBytes();
             String msg = new String(bs);        //when you read text file
             System.out.println(msg);
-
+            in.close();
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
         } catch (IOException e) {
