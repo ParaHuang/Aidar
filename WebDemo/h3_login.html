@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Login Page | Simple Style</title>
+    <!-- Simple CSS - clean, modern, responsive, no external dependencies -->
+    <style>
+        /* ----- RESET & BASE (simple, minimal reset) ----- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            background: #f0f2f5;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 1.5rem;
+        }
+
+        /* Main login card container */
+        .login-container {
+            background: white;
+            max-width: 440px;
+            width: 100%;
+            border-radius: 24px;
+            box-shadow: 0 20px 35px -12px rgba(0, 0, 0, 0.15);
+            padding: 2rem 2rem 2.2rem 2rem;
+            transition: all 0.2s ease;
+        }
+
+        /* header area */
+        .login-header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .login-header h1 {
+            font-size: 1.9rem;
+            font-weight: 600;
+            color: #1e2a3e;
+            letter-spacing: -0.3px;
+            margin-bottom: 0.5rem;
+        }
+
+        .login-header p {
+            color: #5b6e8c;
+            font-size: 0.95rem;
+            margin-top: 0.25rem;
+        }
+
+        /* form group styling */
+        .form-group {
+            margin-bottom: 1.5rem;
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            font-weight: 500;
+            font-size: 0.85rem;
+            margin-bottom: 0.5rem;
+            color: #1e2f41;
+            letter-spacing: 0.3px;
+        }
+
+        input {
+            font-family: inherit;
+            font-size: 1rem;
+            padding: 0.75rem 1rem;
+            border: 1px solid #d4dcec;
+            border-radius: 16px;
+            background-color: #ffffff;
+            transition: 0.2s;
+            outline: none;
+            width: 100%;
+            color: #111827;
+        }
+
+        /* placeholder styling */
+        input::placeholder {
+            color: #9aaebe;
+            font-weight: 400;
+            font-size: 0.9rem;
+        }
+
+        /* input focus state */
+        input:focus {
+            border-color: #3b82f6;
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+        }
+
+        /* remember me row */
+        .checkbox-row {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 0.65rem;
+            margin-bottom: 1.8rem;
+        }
+
+        .checkbox-row input {
+            width: auto;
+            margin: 0;
+            transform: scale(1.05);
+            accent-color: #3b82f6;
+            width: 18px;
+            height: 18px;
+        }
+
+        .checkbox-row label {
+            margin-bottom: 0;
+            font-weight: 500;
+            font-size: 0.9rem;
+            color: #2c3e50;
+        }
+
+        /* sign in button */
+        .signin-btn {
+            background-color: #2563eb;
+            color: white;
+            border: none;
+            width: 100%;
+            padding: 0.85rem 0;
+            font-size: 1rem;
+            font-weight: 600;
+            border-radius: 40px;
+            cursor: pointer;
+            transition: background 0.2s, transform 0.1s;
+            font-family: inherit;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 8px rgba(37, 99, 235, 0.2);
+        }
+
+        .signin-btn:hover {
+            background-color: #1d4ed8;
+            transform: scale(0.98);
+        }
+
+        .signin-btn:active {
+            background-color: #1e40af;
+            transform: scale(0.97);
+        }
+
+        /* links container */
+        .links {
+            text-align: center;
+            margin-top: 0.5rem;
+            border-top: 1px solid #e9edf2;
+            padding-top: 1.5rem;
+            display: flex;
+            justify-content: center;
+            gap: 1.8rem;
+            flex-wrap: wrap;
+        }
+
+        .links a {
+            color: #3b82f6;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        .links a:hover {
+            color: #1e40af;
+            text-decoration: underline;
+        }
+
+        /* demo note / info footer */
+        .demo-note {
+            margin-top: 1.8rem;
+            background: #f8fafd;
+            border-radius: 18px;
+            padding: 0.9rem 1rem;
+            font-size: 0.8rem;
+            color: #4b5565;
+            text-align: center;
+            border: 1px solid #eef2f8;
+        }
+
+        .demo-note strong {
+            color: #2563eb;
+            font-weight: 600;
+        }
+
+        /* small spacing & no extra clutter */
+        hr {
+            display: none;
+        }
+
+        /* responsive touch */
+        @media (max-width: 480px) {
+            .login-container {
+                padding: 1.5rem;
+            }
+            .login-header h1 {
+                font-size: 1.7rem;
+            }
+            .signin-btn {
+                padding: 0.75rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="login-container">
+    <!-- Header section -->
+    <div class="login-header">
+        <h1>Welcome back</h1>
+        <p>Sign in to your account</p>
+    </div>
+
+    <!-- Login form -->
+    <form action="#" method="post" accept-charset="UTF-8">
+        <!-- Username / Email field -->
+        <div class="form-group">
+            <label for="login-email">Email address or Username</label>
+            <input type="text" id="login-email" name="username" 
+                   placeholder="eg. alex@example.com" 
+                   required autocomplete="username">
+        </div>
+
+        <!-- Password field -->
+        <div class="form-group">
+            <label for="login-password">Password</label>
+            <input type="password" id="login-password" name="password" 
+                   placeholder="••••••••" 
+                   required autocomplete="current-password">
+        </div>
+
+        <!-- Remember me checkbox row -->
+        <div class="checkbox-row">
+            <input type="checkbox" id="remember-checkbox" name="remember" value="yes">
+            <label for="remember-checkbox">Keep me signed in</label>
+        </div>
+
+        <!-- Submit button -->
+        <button type="submit" class="signin-btn">Sign in</button>
+
+        <!-- Additional links: Forgot password & Create account -->
+        <div class="links">
+            <a href="#">Forgot password?</a>
+            <a href="#">Create new account</a>
+        </div>
+
+        <!-- subtle demo information - no CSS disturbance -->
+        <div class="demo-note">
+            ⚡ <strong>Demo login</strong> — simple CSS styling • fully responsive<br>
+            Use any credentials (no backend)
+        </div>
+    </form>
+</div>
+
+<!-- 
+    Simple login interface with pure CSS (no frameworks). 
+    All styles are clean, minimal, consistent. 
+    The page is fully in English, accessible, and user-friendly.
+    Form submits to current page (#) for demonstration.
+    No external libraries, pure HTML & embedded CSS.
+-->
+
+</body>
+</html>

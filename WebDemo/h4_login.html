@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* css:cascading style sheet */
+        /* selector: a css element to define style, and helps us to locate tags */
+        /* 
+            selector{
+                style1:value1;
+                style2:value2;
+                style3:value3;
+                style4:value4;
+            }
+        
+        
+        */
+        /* tag selector */
+        input{
+            height:40px;
+            width: 280px;
+            margin: 10px;
+            background:gainsboro
+        }
+
+        /* class selector */
+        .anyName1{
+            color:red
+        }
+
+        /* id selector */
+        #anyName2{
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="anyName1">Welcome to Login</h1>
+    <form action="http://localhost:8080/restaurant_a/user/signIn" method="post">
+        Username:<input name="username" type="text" class="anyName1"/><br/>
+        Password:<input name="password" type="password" class="anyName1"/><br/>
+        <input type="submit" id="anyName2"/>
+    </form>
+</body>
+</html>
