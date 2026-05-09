@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* inner style sheet */
+        /* 
+        important style:
+        1.display       controls the way a tag display itself. values:inline, block, inline-block
+        inline element: not gonna changing line, the size depends on the content, width/height has no effect,eg:span,a
+        block element:taking the whole horizontal space, width/height works,eg:div
+        inline-block: not gonna changing line, width/height works,eg:img,input
+        */
+        div{
+            background: yellow;
+            margin: 20px;
+            width: 300px;
+            height: 50px;
+        }
+
+        span{
+            background: plum;
+            margin: 20px;
+            padding: 10px;
+            width: 150px;
+            height: 150px;
+            display: inline-block;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <span>content for span1</span>
+    <span>content for span2</span>
+    <span>content for span3</span>
+    <div>content for division1</div>
+    <div>content for division2</div>
+    <div>content for division3</div>
+    free text1 free text2 <br/>free text3
+</body>
+</html>
